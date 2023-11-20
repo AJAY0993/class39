@@ -73,6 +73,6 @@ app.get('/api/quotes/:name', (req, res) => {
     res.json(result)
 })
 
-app.listen(9000, () => {
+app.listen(process.env.PORT || 6969, () => {
     console.log('server is listening on 9000')
 })
